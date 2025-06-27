@@ -62,10 +62,14 @@ npm install react-leaflet leaflet
 Also add Leaflet CSS in index.js or App.js:
 import 'leaflet/dist/leaflet.css';
 
+---
+
 💻 Run the App Locally
 npm start
 
 Then open: http://localhost:3000
+
+---
 
 🗺️ Map Source
 Map rendered using React-Leaflet
