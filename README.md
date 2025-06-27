@@ -52,15 +52,14 @@ REACT_APP_FIREBASE_STORAGE_BUCKET=your_project.appspot.com
 REACT_APP_FIREBASE_MESSAGING_SENDER_ID=your_sender_id
 REACT_APP_FIREBASE_APP_ID=your_app_id
 
+---
 
 ## 📦 Install Dependencies
 npm install
 npm install react-leaflet leaflet
 
-
 Also add Leaflet CSS in index.js or App.js:
 import 'leaflet/dist/leaflet.css';
-
 
 💻 Run the App Locally
 npm start
@@ -72,10 +71,14 @@ Map rendered using React-Leaflet
 
 Tiles served from OpenStreetMap
 
+---
+
 🚀 Deploy to Firebase
 npm run build
 firebase init
 firebase deploy
+
+---
 
 ## 📸 Screenshots
 
