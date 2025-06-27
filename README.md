@@ -1,70 +1,103 @@
-# Getting Started with Create React App
+# 📍 Live Location Tracker
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A real-time multi-user location tracking web application built using **React**, **Firebase**, and **React-Leaflet** (OpenStreetMap).  
+🌐 **No billing required** — works completely free without Google Maps API.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Features
 
-### `npm start`
+- 🔐 Anonymous Firebase Authentication
+- 📡 Real-time Firestore location updates
+- 🗺️ Interactive map using OpenStreetMap (via Leaflet)
+- 👥 Multiple users can broadcast their location
+- 🎯 Map auto-centering based on active users
+- 💻 Ready for Firebase Hosting deployment
+- 💸 **No Google Maps API or billing required**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🧩 Tech Stack
 
-### `npm test`
+| Technology | Purpose |
+|------------|---------|
+| React | Frontend framework  
+| Firebase | Backend (Auth + Firestore + Hosting)  
+| React-Leaflet | Free interactive maps  
+| OpenStreetMap | Map tiles (no API key needed)  
+| Material UI | UI components  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🔐 Firebase Setup
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Go to [Firebase Console](https://console.firebase.google.com/)
+2. Create a new project
+3. Enable:
+   - **Authentication** → Anonymous
+   - **Cloud Firestore** → Start in test mode
+4. Register a web app and copy the Firebase config
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🔧 .env File Setup
 
-### `npm run eject`
+Create a `.env` file in the root of your project and add the following:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```env
+REACT_APP_FIREBASE_API_KEY=your_firebase_api_key
+REACT_APP_FIREBASE_AUTH_DOMAIN=your_project.firebaseapp.com
+REACT_APP_FIREBASE_PROJECT_ID=your_project_id
+REACT_APP_FIREBASE_STORAGE_BUCKET=your_project.appspot.com
+REACT_APP_FIREBASE_MESSAGING_SENDER_ID=your_sender_id
+REACT_APP_FIREBASE_APP_ID=your_app_id
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 📦 Install Dependencies
+npm install
+npm install react-leaflet leaflet
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+Also add Leaflet CSS in index.js or App.js:
+import 'leaflet/dist/leaflet.css';
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+💻 Run the App Locally
+npm start
 
-### Code Splitting
+Then open: http://localhost:3000
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+🗺️ Map Source
+Map rendered using React-Leaflet
 
-### Analyzing the Bundle Size
+Tiles served from OpenStreetMap
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+🚀 Deploy to Firebase
+npm run build
+firebase init
+firebase deploy
 
-### Making a Progressive Web App
+## 📸 Screenshots
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### 👥 Active Broadcast Panel  
+![Broadcast Panel](./broadcast.png) 
 
-### Advanced Configuration
+### 🗺️ Live Map View  
+![Map View](./map.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### 🔄 Real-time Listener Tracking  
+![Listener Panel](./listener.png)
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 🔗 Live Demo
 
-### `npm run build` fails to minify
+👉 [Click here to view the live app](https://your-project-name.web.app)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+_(Hosted on Firebase)_
+
+
+
+---
+
+🙋‍♀️ Created with ❤️ by Radhika
