@@ -108,4 +108,9 @@ _(Hosted on Firebase)_
 
 ---
 
-🙋‍♀️ Created with ❤️ by Radhika
+
+🙋‍♀️ Author
+Radhika Mehra
+🎓 CSE Student, NIT Kurukshetra
+📍 Gurugram, Haryana
+📧 radhikamehra6191@gmail.com
