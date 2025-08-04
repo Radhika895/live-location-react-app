@@ -100,7 +100,7 @@ firebase deploy
 
 ## 🔗 Live Demo
 
-👉 [Click here to view the live app](https://your-project-name.web.app)
+👉 [Click here to view the live app](https://live-location-react-app.web.app)
 
 _(Hosted on Firebase)_
 
